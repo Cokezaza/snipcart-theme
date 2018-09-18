@@ -82,7 +82,7 @@ $_header-total-height: 38px;
   font-size: fontsize(header, large) / 2;
   text-align: center;
   text-transform: capitalize;
-  color: $white;
+  color: palette(header, color);
   left: 30px;
   
   // [2]

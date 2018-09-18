@@ -442,10 +442,11 @@ h4,
     line-height: normal;
     padding: .417em; }
   .snip-layout .snip-btn--highlight {
-    background: #efe778;
-    color: #222; }
+    background: -webkit-linear-gradient(top, #00cbe1, #009cbf);
+    background: linear-gradient(to bottom, #00cbe1, #009cbf);
+    color: #fff; }
     .snip-layout .snip-btn--highlight:hover {
-      background-color: #eadf4a; }
+      background-color: #00728c; }
   .snip-layout .snip-btn--left {
     float: left; }
   .snip-layout .snip-btn--right {
@@ -510,16 +511,18 @@ h4,
     padding: 1em;
     position: relative;
     text-align: left;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-header {
         color: #fff;
-        height: 105px;
+        height: auto;
         padding: 0;
         text-align: center; } }
   .snip-layout .snip-header__user {
-    background: #FFFFFF;
-    font-size: 14px;
+    background: #1A6235;
+    font-size: 15px;
     padding: .714em 1.429em;
     text-align: center; }
   .snip-layout .snip-header__user-text {
@@ -534,8 +537,8 @@ h4,
     white-space: nowrap;
     display: -webkit-box;
     display: flex;
-    background: #FFFFFF;
-    font-size: 14px;
+    background: #1A6235;
+    font-size: 15px;
     padding: .714em 1.429em; }
   .snip-layout .snip-header__back--button {
     cursor: pointer;
@@ -548,22 +551,26 @@ h4,
   .snip-layout .snip-header__title {
     display: none;
     font-size: 15px;
-    text-align: center; }
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    left: 30px; }
     .snip-layout .snip-header__title.js-show {
       display: block; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-header__title {
         display: block;
         font-size: 30px;
-        left: 1.25em;
-        line-height: 105px;
+        left: 30px;
+        line-height: auto;
         position: absolute;
         text-align: left; } }
   .snip-layout .snip-header__total {
-    background: #FFFFFF;
+    background: #1A6235;
     border-radius: 5px;
     display: inline-block;
-    padding: .5em; }
+    padding: .5em;
+    color: #fff; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-header__total {
         height: 38px;
@@ -571,8 +578,10 @@ h4,
         margin-top: 2.188em;
         padding: 0 .625em; } }
   .snip-layout .snip-header__total-label {
-    color: #999;
-    margin-right: .625em; }
+    color: #fff;
+    margin-right: .625em;
+    font-weight: normal;
+    font-family: "ProximaNova-Thin"; }
   .snip-layout .snip-header__continue {
     display: none; }
     @media only screen and (min-width: 48em) {
@@ -622,13 +631,13 @@ h4,
     border-top: none;
     border-bottom: 1px solid #eee; }
   .snip-layout .snip-actions__link {
-    color: #999; }
+    color: #009cbf; }
   .snip-layout .snip-actions__link--small {
     font-size: 12px; }
   .snip-layout .snip-actions__link--right {
     float: right; }
   .snip-layout .snip-table {
-    font-size: 14px;
+    font-size: 15px;
     text-align: left;
     width: 100%;
     color: #000;
@@ -658,7 +667,7 @@ h4,
   @media only screen and (max-width: 48em) {
     .snip-layout .snip-table--small {
       display: block;
-      font-size: 14px;
+      font-size: 15px;
       text-align: left; }
       .snip-layout .snip-table--small td, .snip-layout .snip-table--small th, .snip-layout .snip-table--small tr {
         display: block; }
@@ -719,7 +728,7 @@ h4,
         padding: 1.222em 1.111em 1.222em 1.222em; } }
   .snip-layout .snip-table__loading {
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
     font-weight: bold;
     text-transform: uppercase; }
@@ -757,7 +766,7 @@ h4,
   .snip-layout .snip-product {
     background: #FFFFFF;
     border-top: 1px solid #00511f;
-    font-size: 14px;
+    font-size: 15px;
     padding: 2em 1.25em; }
     .snip-layout .snip-product::after {
       clear: both;
@@ -790,22 +799,22 @@ h4,
     text-transform: uppercase; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-product__name {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: .5em; } }
   .snip-layout .snip-product__description {
-    font-size: 12.44444px;
+    font-size: 13.33333px;
     margin-top: .25em;
     overflow: hidden; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-product__description {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: .5em; } }
   .snip-layout .snip-product__important {
     font-family: "ProximaNova-Bold";
-    font-size: 12.44444px; }
+    font-size: 13.33333px; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-product__important {
-        font-size: 14px; } }
+        font-size: 15px; } }
   .snip-layout .snip-product__remove {
     color: #f10;
     font-size: 30px;
@@ -863,23 +872,24 @@ h4,
     height: 1em;
     width: 1em; }
     .snip-layout .snip-quantity-trigger__btn--duplicate:hover {
-      background-color: #eadf4a; }
+      background-color: #00728c; }
     .snip-layout .snip-quantity-trigger__btn--duplicate:before {
       display: block;
       height: 1em;
       width: 1em; }
   .snip-layout .snip-quantity-trigger__btn {
-    background-color: #048FC5;
+    background-color: #009cbf;
     border-radius: 30px;
     color: #fff;
     float: left;
     font-size: 18px;
     font-weight: 400;
     height: 1em;
-    width: 1em; }
+    width: 1em;
+    font-family: "ProximaNova-Bold"; }
     .snip-layout .snip-quantity-trigger__btn:hover {
       background-color: #4a4a4a;
-      color: #000; }
+      color: #fff; }
     .snip-layout .snip-quantity-trigger__btn:before {
       display: block;
       height: 1em;
@@ -980,7 +990,7 @@ h4,
     background: #f10;
     border-radius: 3px;
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     padding: .357em;
     text-align: center; }
   .snip-layout .snip-steps {
