@@ -8,112 +8,112 @@
 */
 
 $palettes: (
-        action: (
-                link: #999
-        ),
-        button: (
-                background: linear-gradient(to bottom, #00cbe1, #009cbf),
-                background--highlight: #efe778,
-                background--hover: linear-gradient(to bottom, #009cbf, #00cbe1),
-                background--danger: #f10,
-                background--danger-hover: darken(#f10, 10%),
-                background--highlight-hover: darken(#efe778, 10%),
-                backgroun--disabled: #9B9B9B,
-                color: #fff,
-                color--highlight: #222,
-        ),
-        error: (
-                color: #f10,
-                text-color: #333,
-                text-color--invert: #fff
-        ),
-        badge: (
-                background--success: #76d443,
-                background--error: #f10,
-                background--warn: #efe778,
-                text--success: #333,
-                text--error: #fff,
-                text--warn: #333
-        ),
-        flash: (
-                background--error: #f10,
-                background--success: #76d443,
-                background--warning: #efe778,
-                background--confirm: #222,
-                border: #333,
-                color: #333,
-                color--invert: #fff
-        ),
-        footer: (
-                background: #00511f,
-                color: #fff,
-                color--highlight: #999
-        ),
-        form: (
-                background: #fff,
-                border: #eee,
-                border--focus: #333,
-                color: #555,
-                color--highlight: #333,
-                label-color: #999
-        ),
-        header: (
-                background: #00511f,
-                background--highlight: #FFFFFF,
-                color: #fff,
-                label-color: #999
-        ),
-        layout: (
-                background: #fff,
-                border: #eee,
-                close-color: #fff,
-                color: #000,
-                content-background: #f8f8f8,
-                content-border: #bbb,
-                loading-color: #333
-        ),
-        loader: (
-                background: #222,
-                background--highlight: #efe778
-        ),
-        product: (
-                background: #FFFFFF,
-                border: #00511f,
-                color--error: #f10,
-                color--highlight: #333
-        ),
-        quantity-trigger: (
-                background: #048FC5,
-                background--hover: #4a4a4a,
-                background--disabled: #eee,
-                color: #fff,
-                color--hover: #000,
-                color--disabled: #bbb
-        ),
-        static: (
-                background--highlight: #f8f8f8,
-                border: #eee,
-                color--highlight: #333,
-                color--link: #999
-        ),
-        step: (
-                background: #ccc,
-                background--active: #fff,
-                border: #bbb,
-                color: #000,
-                color--active: #333
-        ),
-        table: (
-                background--highlight: #f8f8f8,
-                border: #00511f,
-                color--highlight: #333,
-                color--success: #76d443,
-                color: #000
-        ),
-        tooltip: (
-                background: #ccc,
-                border: #ccc transparent,
-                label: #555,
-                text: #111
-        )
+	action: (
+		link: #009cbf
+	),
+	button: (
+		background: linear-gradient(to bottom, #00cbe1, #009cbf),
+		background--highlight: linear-gradient(to bottom, #00cbe1, #009cbf),
+		background--hover: linear-gradient(to bottom, #009cbf, #00cbe1),
+		background--danger: #f10,
+		background--danger-hover: darken(#f10, 10%),
+		background--highlight-hover: darken(#009cbf, 10%),
+		backgroun--disabled: #9B9B9B,
+		color: #fff,
+		color--highlight: #fff,
+	),
+	error: (
+		color: #f10,
+		text-color: #333,
+		text-color--invert: #fff
+	),
+	badge: (
+		background--success: #76d443,
+		background--error: #f10,
+		background--warn: #efe778,
+		text--success: #333,
+		text--error: #fff,
+		text--warn: #333
+	),
+	flash: (
+		background--error: #f10,
+		background--success: #76d443,
+		background--warning: #efe778,
+		background--confirm: #222,
+		border: #333,
+		color: #333,
+		color--invert: #fff
+	),
+	footer: (
+		background: #00511f,
+		color: #fff,
+		color--highlight: #999
+	),
+	form: (
+		background: #fff,
+		border: #eee,
+		border--focus: #333,
+		color: #555,
+		color--highlight: #333,
+		label-color: #999
+	),
+	header: (
+		background: #00511f,
+		background--highlight: #1A6235,
+		color: #fff,
+		label-color: #fff
+	),
+	layout: (
+		background: #fff,
+		border: #eee,
+		close-color: #fff,
+		color: #000,
+		content-background: #f8f8f8,
+		content-border: #bbb,
+		loading-color: #333
+	),
+	loader: (
+		background: #222,
+		background--highlight: #efe778
+	),
+	product: (
+		background: #FFFFFF,
+		border: #00511f,
+		color--error: #f10,
+		color--highlight: #333
+	),
+	quantity-trigger: (
+		background: #009cbf,
+		background--hover: #4a4a4a,
+		background--disabled: #eee,
+		color: #fff,
+		color--hover: #fff,
+		color--disabled: #bbb
+	),
+	static: (
+		background--highlight: #f8f8f8,
+		border: #eee,
+		color--highlight: #333,
+		color--link: #999
+	),
+	step: (
+		background: #ccc,
+		background--active: #fff,
+		border: #bbb,
+		color: #000,
+		color--active: #333
+	),
+	table: (
+		background--highlight: #f8f8f8,
+		border: #00511f,
+		color--highlight: #333,
+		color--success: #76d443,
+		color: #000
+	),
+	tooltip: (
+		background: #ccc,
+		border: #ccc transparent,
+		label: #555,
+		text: #111
+	)
 );

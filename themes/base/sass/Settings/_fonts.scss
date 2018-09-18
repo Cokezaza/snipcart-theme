@@ -25,41 +25,40 @@ $font-base: $font-reg, Arial, sans-serif;
     ICONS FONT
 */
 @font-face {
-    font-family: "Snipcart";
-    src: url('fonts/snipcart/Snipcart.woff?94043836') format("woff"),
-         url('fonts/snipcart/Snipcart.ttf?94043836') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: $font-reg;
-    src: $font-reg-otf format("opentype"), $font-reg-ttf format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Snipcart";
+  src: url('fonts/snipcart/Snipcart.woff?94043836') format("woff"),
+  url('fonts/snipcart/Snipcart.ttf?94043836') format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: $font-semi;
-    src: $font-semi-otf format("opentype"), $font-semi-ttf format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: $font-reg;
+  src: $font-reg-otf format("opentype"), $font-reg-ttf format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: $font-bold;
-    src: $font-bold-otf format("opentype"), $font-bold-ttf format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: $font-semi;
+  src: $font-semi-otf format("opentype"), $font-semi-ttf format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: $font-thin;
-    src: $font-thin-otf format("opentype"), $font-thin-ttf format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: $font-bold;
+  src: $font-bold-otf format("opentype"), $font-bold-ttf format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-
+@font-face {
+  font-family: $font-thin;
+  src: $font-thin-otf format("opentype"), $font-thin-ttf format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 /**
     FONT HELPERS
@@ -69,64 +68,64 @@ $font-base: $font-reg, Arial, sans-serif;
     - add your font-family. Ex: font-family: 'myFont-bold';
 */
 @mixin font-bold {
-    font-family: $font-bold;
+  font-family: $font-bold;
 }
-
 
 /**
     FONT SIZES
 */
 $fontsize: (
-    action: (
-        small: 12px
-    ),
-    button: (
-        base: 12px
-    ),
-    error: (
-        base: 14px
-    ),
-    flash: (
-        base: 12px
-    ),
-    footer: (
-        base: 10px
-    ),
-    form: (
-        small: 12px,
-        base: 14px
-    ),
-    header: (
-        small: 14px,
-        large: 30px
-    ),
-    product: (
-        base: 14px,
-        large: 20px,
-        icon: 30px
-    ),
-    quantity-trigger: (
-        large: 18px,
-        x-large: 22px
-    ),
-    reset: (
-        base: 14px,
-        large: 16px
-    ),
-    static: (
-        small: 12px,
-        base: 14px
-    ),
-    step: (
-        small: 10px,
-        icon: 34px
-    ),
-    table: (
-        small: 12px,
-        base: 14px,
-        large: 20px
-    ),
-    discount: (
-        icon: 20px
-    )
+	action: (
+		small: 12px
+	),
+	button: (
+		base: 12px
+	),
+	error: (
+		base: 14px
+	),
+	flash: (
+		base: 12px
+	),
+	footer: (
+		base: 10px
+	),
+	form: (
+		small: 12px,
+		base: 15px
+	),
+	header: (
+		small: 15px,
+		large: 30px
+	),
+	product: (
+		base: 15px,
+		large: 20px,
+		icon: 30px
+	),
+	quantity-trigger: (
+		base: 15x,
+		large: 18px,
+		x-large: 22px
+	),
+	reset: (
+		base: 14px,
+		large: 16px
+	),
+	static: (
+		small: 12px,
+		base: 14px
+	),
+	step: (
+		small: 10px,
+		icon: 34px
+	),
+	table: (
+		small: 12px,
+		base: 15px,
+		large: 20px
+	),
+	discount: (
+		icon: 20px
+	)
 );
