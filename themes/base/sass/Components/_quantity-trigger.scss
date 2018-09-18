@@ -67,15 +67,17 @@ $_qt-text-remove: "-";
     // [2]
     background-color: palette(quantity-trigger, background);
     border-radius: 30px;
-    color: inherit;
+    color: palette(quantity-trigger, color);
     float: left;
     font-size: fontsize(quantity-trigger, large);
     font-weight: 400;
     height: 1em;
     width: 1em;
 
+
     &:hover {
         background-color: palette(quantity-trigger, background--hover);
+        color: palette(quantity-trigger, color--hover);
     }
 
     &:before {

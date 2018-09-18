@@ -4,8 +4,22 @@
     We don't want to load many fonts on your site so we stay classic.
     You can add your custom fonts here and/or define your own fonts family variables.
 */
-$font-base: Arial, sans-serif;
+$font-reg: "ProximaNova-Reg";
+$font-reg-otf: url("/fonts/ProximaNova-Reg.otf");
+$font-reg-ttf: url("/fonts/ProximaNova-Reg-webfont.ttf");
 
+$font-semi: "ProximaNova-Semibold";
+$font-semi-otf: url("/fonts/Proxima-Nova-Semibold.otf");
+$font-semi-ttf: url("/fonts/Proxima-Nova-Semibold.ttf");
+
+$font-bold: "ProximaNova-Bold";
+$font-bold-otf: url("/fonts/ProximaNova-Bold.otf");
+$font-bold-ttf: url("/fonts/ProximaNova-Bold-webfont.ttf");
+
+$font-thin: "ProximaNova-Thin";
+$font-thin-otf: url("/fonts/ProximaNova-Thin.otf");
+$font-thin-ttf: url("/fonts/ProximaNova-Thin-webfont.ttf");
+$font-base: $font-reg, Arial, sans-serif;
 
 /**
     ICONS FONT
@@ -17,6 +31,34 @@ $font-base: Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: $font-reg;
+    src: $font-reg-otf format("opentype"), $font-reg-ttf format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-semi;
+    src: $font-semi-otf format("opentype"), $font-semi-ttf format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-bold;
+    src: $font-bold-otf format("opentype"), $font-bold-ttf format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-thin;
+    src: $font-thin-otf format("opentype"), $font-thin-ttf format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 
 /**
@@ -27,7 +69,7 @@ $font-base: Arial, sans-serif;
     - add your font-family. Ex: font-family: 'myFont-bold';
 */
 @mixin font-bold {
-    font-weight: 700;
+    font-family: $font-bold;
 }
 
 

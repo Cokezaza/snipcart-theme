@@ -20,9 +20,9 @@ $_btn-size: 36px;
 
 // [1]
 .snip-btn {
-    @include font-bold;
+    font-family: $font-bold, arial, sans-serif;
     background-color: palette(button, background);
-    border-radius: 3px;
+    border-radius: 4px;
     border: 0;
     color: palette(button, color);
     cursor: pointer;
@@ -31,11 +31,25 @@ $_btn-size: 36px;
     height: $_btn-size;
     line-height: $_btn-size;
     outline: 0;
-    padding: 0 1em;
+    padding: 0 20px;
     text-transform: uppercase;
 
     &:hover {
         background-color: palette(button, background--hover);
+    }
+
+    &:disabled{
+        background-color: palette(button, background--disabled);
+        border-radius: 4px;
+        box-shadow: none;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: palette(button, background--disabled);
+            border-radius: 4px;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
     }
 
     @media #{$mq-medium} {

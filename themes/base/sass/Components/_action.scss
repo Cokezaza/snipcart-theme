@@ -18,7 +18,8 @@ $_action-border: 1px solid palette(layout, border);
 \*------------------------------------*/
 
 .snip-actions {
-    border-top: $_action-border;
+    border:0;
+    padding: 0 30px;
     padding: $padding-small;
 
     // [1]
