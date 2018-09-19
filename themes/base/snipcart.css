@@ -549,7 +549,7 @@ h4,
   .snip-layout .snip-header__user-mail {
     color: #fff; }
   .snip-layout .snip-header__title {
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
     text-transform: capitalize;
     color: #fff;
@@ -763,7 +763,6 @@ h4,
   .snip-layout .snip-table__cell--bold {
     font-family: "ProximaNova-Bold"; }
   .snip-layout .snip-table__cell--highlight {
-    font-family: "ProximaNova-Bold";
     color: #333; }
   .snip-layout .snip-table__cell--success {
     font-family: "ProximaNova-Bold";

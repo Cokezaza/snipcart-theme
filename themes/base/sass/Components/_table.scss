@@ -206,7 +206,6 @@ $_notice-error--text-color: palette(static, color--highlight);
 }
 
 .snip-table__cell--highlight {
-    @include font-bold;
     color: palette(table, color--highlight);
 }
 
