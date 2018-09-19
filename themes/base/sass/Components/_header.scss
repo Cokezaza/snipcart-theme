@@ -94,7 +94,7 @@ $_header-total-height: 30px;
   
   @media #{$mq-medium} {
 	display: block;
-	font-size: fontsize(header, large);
+	font-size: fontsize(header, medium);
 	left:20px;
 	line-height: $_header-height;
 	position: absolute;
@@ -112,6 +112,7 @@ $_header-total-height: 30px;
   padding: .5em;
   color: palette(header, color);
   font-family: $font-thin;
+  font-size: 0.8em;
   
   @media #{$mq-medium} {
 	height: $_header-total-height;
@@ -127,11 +128,12 @@ $_header-total-height: 30px;
   font-weight: normal;
   font-family: $font-thin;
   text-transform: capitalize;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 #snipcart-amount{
   font-family: $font-bold;
+  font-size: 1em;
 }
 
 .snip-header__continue {
