@@ -12,7 +12,7 @@
 \*------------------------------------*/
 
 $_header-height: auto;
-$_header-total-height: 38px;
+$_header-total-height: 30px;
 
 /*------------------------------------*\
     STYLE
@@ -21,7 +21,7 @@ $_header-total-height: 38px;
 .snip-header {
   background: palette(header, background);
   color: palette(header, color);
-  padding: $padding-small 0;
+  padding: 15px 0 15px;
   position: relative;
   text-align: left;
   text-transform: uppercase;
@@ -31,7 +31,6 @@ $_header-total-height: 38px;
   @media #{$mq-medium} {
 	color: palette(header, color);
 	height: $_header-height;
-	padding: $padding-small 0;
 	text-align: center;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
@@ -83,7 +82,7 @@ $_header-total-height: 38px;
   text-align: center;
   text-transform: capitalize;
   color: palette(header, color);
-  left: 20px;
+  left: 30px;
   font-family: $font-thin;
   margin: 0;
   line-height: normal;
@@ -128,6 +127,7 @@ $_header-total-height: 38px;
   font-weight: normal;
   font-family: $font-thin;
   text-transform: capitalize;
+  font-size: 12px;
 }
 
 #snipcart-amount{

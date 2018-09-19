@@ -472,13 +472,13 @@ h4,
     padding: .333em;
     padding: 0;
     position: absolute;
-    right: .417em;
+    right: 1.3em;
     top: .1em;
     z-index: 2; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-layout__close {
         font-size: 1.5em;
-        top: .208em; }
+        top: .65em; }
         .snip-layout .snip-layout__close.js-hidden {
           display: none; } }
   .snip-layout .snip-layout__loading {
@@ -507,7 +507,7 @@ h4,
   .snip-layout .snip-header {
     background: #00511f;
     color: #fff;
-    padding: 2em 0;
+    padding: 15px 0 15px;
     position: relative;
     text-align: left;
     text-transform: uppercase;
@@ -517,7 +517,6 @@ h4,
       .snip-layout .snip-header {
         color: #fff;
         height: auto;
-        padding: 2em 0;
         text-align: center;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px; } }
@@ -554,7 +553,7 @@ h4,
     text-align: center;
     text-transform: capitalize;
     color: #fff;
-    left: 20px;
+    left: 30px;
     font-family: "ProximaNova-Thin";
     margin: 0;
     line-height: normal; }
@@ -580,8 +579,8 @@ h4,
     font-family: "ProximaNova-Thin"; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-header__total {
-        height: 38px;
-        line-height: 38px;
+        height: 30px;
+        line-height: 30px;
         margin: 0;
         padding: 0 .625em; } }
   .snip-layout .snip-header__total-label {
@@ -589,7 +588,8 @@ h4,
     margin-right: .625em;
     font-weight: normal;
     font-family: "ProximaNova-Thin";
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-size: 12px; }
   .snip-layout #snipcart-amount {
     font-family: "ProximaNova-Bold"; }
   .snip-layout .snip-header__continue {
@@ -626,7 +626,7 @@ h4,
     color: #999; }
   .snip-layout .snip-actions {
     border: 0;
-    padding: 0 30px; }
+    padding: 0 1.5em; }
     .snip-layout .snip-actions::after {
       clear: both;
       content: "";
@@ -643,7 +643,8 @@ h4,
     color: #009cbf;
     font-family: "ProximaNova-Bold";
     text-decoration: underline;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1em; }
   .snip-layout .snip-actions__link--small {
     font-size: 12px; }
   .snip-layout .snip-actions__link--right {
@@ -658,7 +659,7 @@ h4,
       border: none;
       border-color: #00511f;
       border-bottom: 1px solid #00511f;
-      padding: inherit; }
+      padding: 1.5em 0.5em 1.5em 0; }
       .snip-layout .snip-table td.snip-table__row--no-border, .snip-layout .snip-table th.snip-table__row--no-border, .snip-layout .snip-table tr.snip-table__row--no-border {
         border-bottom: none; }
         .snip-layout .snip-table td.snip-table__row--no-border td, .snip-layout .snip-table th.snip-table__row--no-border td, .snip-layout .snip-table tr.snip-table__row--no-border td {
@@ -687,7 +688,7 @@ h4,
           padding: 0;
           width: 0; }
       .snip-layout .snip-table--small tr {
-        padding: 2em 0;
+        padding: 0;
         position: relative; }
         .snip-layout .snip-table--small tr::after {
           clear: both;
@@ -695,7 +696,7 @@ h4,
           display: table; }
       .snip-layout .snip-table--small td {
         border: 0;
-        padding: 2em; }
+        padding: 1.5em 0.5em; }
       .snip-layout .snip-table--small .snip-table__header {
         display: none; }
       .snip-layout .snip-table--small .snip-table__body {
@@ -770,7 +771,7 @@ h4,
   @media only screen and (max-width: 48em) {
     .snip-layout .snip-table__small-col {
       float: left;
-      margin-top: 4em;
+      margin-top: 3em;
       text-align: center;
       width: 33.333333%; }
       .snip-layout .snip-table__small-col + .snip-table__small-col {
@@ -830,12 +831,13 @@ h4,
   .snip-layout .snip-product__remove {
     color: #D0021B;
     font-size: 30px;
-    position: static; }
+    position: static;
+    font-weight: 700; }
     @media only screen and (max-width: 48em) {
       .snip-layout .snip-product__remove {
         position: absolute;
-        right: 0.57143em;
-        top: 1.14286em; } }
+        right: 0.42857em;
+        top: 0.85714em; } }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-product__remove {
         float: left;
@@ -1009,8 +1011,7 @@ h4,
   .snip-layout .snip-steps {
     background: #ccc;
     display: block;
-    height: 48px;
-    padding: 0 2em; }
+    height: 48px; }
     .snip-layout .snip-steps.snip-steps--4 li {
       width: 25%; }
     .snip-layout .snip-steps.snip-steps--5 li {
@@ -1021,8 +1022,9 @@ h4,
       width: 14.28571%; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-steps {
-        height: 60px;
-        padding: 0 2em; } }
+        height: 60px; } }
+  .snip-layout .snipcart-step {
+    padding: 0 1.5em; }
   .snip-layout .snip-step__item {
     background: #ccc;
     border-bottom: 1px solid #bbb;
@@ -1089,10 +1091,10 @@ h4,
         content: "";
         display: table; } }
   .snip-layout .snip-col {
-    padding: 0 2em 2em; }
+    padding: 0 1.5em 1.5em; }
     .snip-layout .snip-col + .snip-col {
       border-top: 1px solid #eee;
-      padding-top: 2em; }
+      padding-top: 1.5em; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-col {
         float: left;
@@ -1268,8 +1270,8 @@ h4,
     @media only screen and (max-width: 48em) {
       .snip-layout .snip-discount__remove {
         position: absolute;
-        right: 0.57143em;
-        top: 1.14286em; } }
+        right: 0.42857em;
+        top: 0.85714em; } }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-discount__remove {
         float: left; } }

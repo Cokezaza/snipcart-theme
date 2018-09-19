@@ -99,6 +99,7 @@ $_product-disabled-opacity: 0.2;
     color: palette(product, color--error);
     font-size: fontsize(product, icon);
     position: static;
+    font-weight: 700;
 
     @media #{$mq-small} {
       position: absolute;

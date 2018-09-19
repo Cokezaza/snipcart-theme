@@ -19,7 +19,7 @@ $_action-border: 1px solid palette(layout, border);
 
 .snip-actions {
     border:0;
-    padding: 0 30px;
+    padding: 0 $padding-small;
 
     // [1]
     @include clearfix;
@@ -43,6 +43,7 @@ $_action-border: 1px solid palette(layout, border);
     @include font-bold();
     text-decoration: underline;
     text-transform: uppercase;
+    font-size: 1em;
 }
 
 .snip-actions__link--small {

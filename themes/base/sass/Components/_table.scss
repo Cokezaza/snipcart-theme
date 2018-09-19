@@ -36,7 +36,7 @@ $_notice-error--text-color: palette(static, color--highlight);
         border: none;
         border-color: palette(table, border);
         border-bottom: $_table-border;
-        padding: inherit;
+        padding: $padding-small 0.5em $padding-small 0;
 
         &.snip-table__row--no-border {
           border-bottom: none;
@@ -88,7 +88,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 
         tr {
             @include clearfix;
-            padding: $padding-small 0;
+            padding: 0;
             position: relative;
 
             + tr {
@@ -98,7 +98,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 
         td {
             border: 0;
-            padding: $padding-small;
+            padding: $padding-small 0.5em;
         }
 
         .snip-table__header {
