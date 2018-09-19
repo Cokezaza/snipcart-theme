@@ -98,7 +98,7 @@ body.snip-open {
   bottom: 0;
   color: #000;
   font-family: "ProximaNova-Reg", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   left: 0;
   line-height: normal;
   overflow-x: auto;
@@ -395,7 +395,7 @@ h4,
     box-sizing: border-box;
     color: #555;
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     height: auto;
     line-height: 18px;
     margin: 0;
@@ -505,10 +505,9 @@ h4,
     text-transform: uppercase;
     font-size: 18px; }
   .snip-layout .snip-header {
-    font-family: "ProximaNova-Bold";
     background: #00511f;
     color: #fff;
-    padding: 1em;
+    padding: 2em 0;
     position: relative;
     text-align: left;
     text-transform: uppercase;
@@ -518,8 +517,10 @@ h4,
       .snip-layout .snip-header {
         color: #fff;
         height: auto;
-        padding: 0;
-        text-align: center; } }
+        padding: 2em 0;
+        text-align: center;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px; } }
   .snip-layout .snip-header__user {
     background: #1A6235;
     font-size: 15px;
@@ -549,39 +550,48 @@ h4,
   .snip-layout .snip-header__user-mail {
     color: #fff; }
   .snip-layout .snip-header__title {
-    display: none;
     font-size: 15px;
     text-align: center;
     text-transform: capitalize;
     color: #fff;
-    left: 30px; }
+    left: 20px;
+    font-family: "ProximaNova-Thin";
+    margin: 0;
+    line-height: normal; }
     .snip-layout .snip-header__title.js-show {
       display: block; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-header__title {
         display: block;
         font-size: 30px;
-        left: 30px;
+        left: 20px;
         line-height: auto;
         position: absolute;
-        text-align: left; } }
+        text-align: left;
+        margin: 0;
+        line-height: normal;
+        font-family: "ProximaNova-Thin"; } }
   .snip-layout .snip-header__total {
     background: #1A6235;
     border-radius: 5px;
     display: inline-block;
     padding: .5em;
-    color: #fff; }
+    color: #fff;
+    font-family: "ProximaNova-Thin"; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-header__total {
         height: 38px;
         line-height: 38px;
-        margin-top: 2.188em;
+        margin: 0;
         padding: 0 .625em; } }
   .snip-layout .snip-header__total-label {
     color: #fff;
     margin-right: .625em;
     font-weight: normal;
-    font-family: "ProximaNova-Thin"; }
+    font-family: "ProximaNova-Thin";
+    text-transform: capitalize; }
+  .snip-layout #snipcart-amount {
+    font-family: "ProximaNova-Bold"; }
   .snip-layout .snip-header__continue {
     display: none; }
     @media only screen and (min-width: 48em) {
@@ -616,8 +626,7 @@ h4,
     color: #999; }
   .snip-layout .snip-actions {
     border: 0;
-    padding: 0 30px;
-    padding: 1em; }
+    padding: 0 30px; }
     .snip-layout .snip-actions::after {
       clear: both;
       content: "";
@@ -631,7 +640,10 @@ h4,
     border-top: none;
     border-bottom: 1px solid #eee; }
   .snip-layout .snip-actions__link {
-    color: #009cbf; }
+    color: #009cbf;
+    font-family: "ProximaNova-Bold";
+    text-decoration: underline;
+    text-transform: uppercase; }
   .snip-layout .snip-actions__link--small {
     font-size: 12px; }
   .snip-layout .snip-actions__link--right {
@@ -675,7 +687,7 @@ h4,
           padding: 0;
           width: 0; }
       .snip-layout .snip-table--small tr {
-        padding: 1em 0;
+        padding: 2em 0;
         position: relative; }
         .snip-layout .snip-table--small tr::after {
           clear: both;
@@ -683,7 +695,7 @@ h4,
           display: table; }
       .snip-layout .snip-table--small td {
         border: 0;
-        padding: 1em; }
+        padding: 2em; }
       .snip-layout .snip-table--small .snip-table__header {
         display: none; }
       .snip-layout .snip-table--small .snip-table__body {
@@ -758,7 +770,7 @@ h4,
   @media only screen and (max-width: 48em) {
     .snip-layout .snip-table__small-col {
       float: left;
-      margin-top: 2em;
+      margin-top: 4em;
       text-align: center;
       width: 33.333333%; }
       .snip-layout .snip-table__small-col + .snip-table__small-col {
@@ -816,14 +828,14 @@ h4,
       .snip-layout .snip-product__important {
         font-size: 15px; } }
   .snip-layout .snip-product__remove {
-    color: #f10;
+    color: #D0021B;
     font-size: 30px;
     position: static; }
     @media only screen and (max-width: 48em) {
       .snip-layout .snip-product__remove {
         position: absolute;
-        right: 0.28571em;
-        top: 0.57143em; } }
+        right: 0.57143em;
+        top: 1.14286em; } }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-product__remove {
         float: left;
@@ -854,7 +866,8 @@ h4,
     margin: 0 auto; }
   .snip-layout .snip-quantity-trigger__text {
     float: left;
-    padding: 0 .313em; }
+    padding: 0 .313em;
+    color: #000; }
   .snip-layout .snip-quantity-trigger__btn--duplicate {
     background-color: #4a4a4a;
     border-radius: 30px;
@@ -997,7 +1010,7 @@ h4,
     background: #ccc;
     display: block;
     height: 48px;
-    padding: 0 30px 0 30px; }
+    padding: 0 2em; }
     .snip-layout .snip-steps.snip-steps--4 li {
       width: 25%; }
     .snip-layout .snip-steps.snip-steps--5 li {
@@ -1008,7 +1021,8 @@ h4,
       width: 14.28571%; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-steps {
-        height: 60px; } }
+        height: 60px;
+        padding: 0 2em; } }
   .snip-layout .snip-step__item {
     background: #ccc;
     border-bottom: 1px solid #bbb;
@@ -1075,10 +1089,10 @@ h4,
         content: "";
         display: table; } }
   .snip-layout .snip-col {
-    padding: 0 1em 1em; }
+    padding: 0 2em 2em; }
     .snip-layout .snip-col + .snip-col {
       border-top: 1px solid #eee;
-      padding-top: 1em; }
+      padding-top: 2em; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-col {
         float: left;
@@ -1248,14 +1262,14 @@ h4,
     .snip-layout .snip-flash__item--error:hover {
       background-color: #990a00; }
   .snip-layout .snip-discount__remove {
-    color: #f10;
+    color: #D0021B;
     font-size: 20px;
     position: static; }
     @media only screen and (max-width: 48em) {
       .snip-layout .snip-discount__remove {
         position: absolute;
-        right: 0.28571em;
-        top: 0.57143em; } }
+        right: 0.57143em;
+        top: 1.14286em; } }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-discount__remove {
         float: left; } }
@@ -1279,4 +1293,4 @@ h4,
   @media only screen and (min-width: 64em) {
     .snip-layout {
       font-size: 16px;
-      padding: 1.5em 0; } }
+      padding: 2em 0; } }

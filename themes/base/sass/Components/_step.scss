@@ -23,7 +23,7 @@ $_steps-border: 1px solid palette(step, border);
     background: palette(step, background);
     display: block;
     height: $_steps-height / 1.25;
-    padding: 0 30px 0 30px;
+    padding: 0 $padding-small;
 
     &.snip-steps--4 li {
         width: percentage(1 / 4);
@@ -43,6 +43,7 @@ $_steps-border: 1px solid palette(step, border);
 
     @media #{$mq-medium} {
         height: $_steps-height;
+        padding: 0 $padding-small;
     }
 }
 
