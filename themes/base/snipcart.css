@@ -390,7 +390,7 @@ h4,
   .snip-layout input[type=password],
   .snip-layout select {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #eee;
     box-sizing: border-box;
     color: #555;
@@ -399,7 +399,7 @@ h4,
     height: auto;
     line-height: 18px;
     margin: 0;
-    padding: .571em .429em;
+    padding: .634em .429em;
     -webkit-transition: border 0.66s ease;
     transition: border 0.66s ease;
     width: 100%; }
@@ -408,21 +408,22 @@ h4,
     .snip-layout input[type=password]:hover,
     .snip-layout select:focus,
     .snip-layout select:hover {
-      border-color: #333; }
+      border-color: #009cbf; }
   .snip-layout .snip-btn {
-    font-family: "ProximaNova-Bold", arial, sans-serif;
-    background-color: linear-gradient(to bottom, #00cbe1, #009cbf);
+    font-family: "ProximaNova-Semibold", arial, sans-serif;
+    background-color: #fff;
     border-radius: 4px;
-    border: 0;
-    color: #fff;
+    border: 1px solid;
+    color: #009cbf;
     cursor: pointer;
     display: inline-block;
-    font-size: 10px;
-    height: 36px;
-    line-height: 36px;
+    font-size: 15px;
+    height: 39px;
+    line-height: 39px;
     outline: 0;
-    padding: 0 20px;
-    text-transform: uppercase; }
+    padding: 0 1em;
+    text-transform: uppercase;
+    text-space: 1em; }
     .snip-layout .snip-btn:hover {
       background-color: linear-gradient(to bottom, #009cbf, #00cbe1); }
     .snip-layout .snip-btn:disabled {
@@ -435,8 +436,8 @@ h4,
         cursor: not-allowed; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-btn {
-        font-size: 12px;
-        padding: 0 2em; } }
+        font-size: 15px;
+        padding: 0 1em; } }
   .snip-layout .snip-btn--small {
     height: auto;
     line-height: normal;
@@ -453,9 +454,9 @@ h4,
     float: right;
     margin-left: 1em; }
   .snip-layout .snip-btn--danger {
-    background-color: #f10; }
+    background-color: #D0021B; }
     .snip-layout .snip-btn--danger:hover {
-      background-color: #cc0e00; }
+      background-color: #9d0214; }
   .snip-layout .snip-btn--full {
     display: block;
     margin-top: 1em;
@@ -463,7 +464,7 @@ h4,
   .snip-layout .snip-layout__main-container {
     background: #fff;
     margin: 0 auto;
-    max-width: 62.25em;
+    max-width: 50em;
     position: relative;
     border-radius: 5px; }
   .snip-layout .snip-layout__close {
@@ -507,7 +508,7 @@ h4,
   .snip-layout .snip-header {
     background: #00511f;
     color: #fff;
-    padding: 15px 0 15px;
+    padding: 10px 0 15px;
     position: relative;
     text-align: left;
     text-transform: uppercase;
@@ -516,7 +517,7 @@ h4,
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-header {
         color: #fff;
-        height: auto;
+        height: 50px;
         text-align: center;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px; } }
@@ -564,7 +565,7 @@ h4,
         display: block;
         font-size: 20px;
         left: 20px;
-        line-height: auto;
+        line-height: 50px;
         position: absolute;
         text-align: left;
         margin: 0;
@@ -612,12 +613,13 @@ h4,
       top: 50%; } }
   .snip-layout .snip-footer {
     background: #00511f;
-    padding: .125em .625em;
+    padding: .125em 15px;
     text-transform: uppercase;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
+    border-bottom-right-radius: 5px;
+    color: #fff; }
   .snip-layout .snip-footer__copyright {
-    background: url("img/lock.png") no-repeat left 0.3em;
+    background: url("img/lock.png") no-repeat left center;
     color: #fff;
     display: inline-block;
     font-size: 10px;
@@ -625,7 +627,7 @@ h4,
     line-height: 35px;
     padding-left: 3.2em; }
   .snip-layout .snip-footer__highlight {
-    color: #999; }
+    color: #fff; }
   .snip-layout .snip-actions {
     border: 0;
     padding: 0 1.5em; }
@@ -648,7 +650,7 @@ h4,
     text-transform: uppercase;
     font-size: 1em; }
   .snip-layout .snip-actions__link--small {
-    font-size: 12px; }
+    font-size: 15px; }
   .snip-layout .snip-actions__link--right {
     float: right; }
   .snip-layout .snip-table {
@@ -660,12 +662,22 @@ h4,
     .snip-layout .snip-table td, .snip-layout .snip-table th, .snip-layout .snip-table tr {
       border: none;
       border-color: #00511f;
-      border-bottom: 1px solid #00511f;
+      border-bottom: 2px solid #00511f;
       padding: 1.5em 0.5em 1.5em 0; }
       .snip-layout .snip-table td.snip-table__row--no-border, .snip-layout .snip-table th.snip-table__row--no-border, .snip-layout .snip-table tr.snip-table__row--no-border {
         border-bottom: none; }
         .snip-layout .snip-table td.snip-table__row--no-border td, .snip-layout .snip-table th.snip-table__row--no-border td, .snip-layout .snip-table tr.snip-table__row--no-border td {
           border-bottom: 0; }
+    .snip-layout .snip-table #snipcart-discounts-list tr, .snip-layout .snip-table #snipcart-discounts-list td,
+    .snip-layout .snip-table #snipcart-discounts tr,
+    .snip-layout .snip-table #snipcart-discounts td,
+    .snip-layout .snip-table #snipcart-fees tr,
+    .snip-layout .snip-table #snipcart-fees td,
+    .snip-layout .snip-table #snipcart-total tr,
+    .snip-layout .snip-table #snipcart-total td {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border: none; }
   .snip-layout .snip-table .snip-table__cell__notices {
     margin: 0;
     padding: 0; }
@@ -677,7 +689,7 @@ h4,
         background-color: #faf7d3;
         color: #333; }
       .snip-layout .snip-table .snip-table__cell__notices div.snip-table__cell__notices--error {
-        background-color: #ffcfcc;
+        background-color: #fea0ab;
         color: #333; }
   @media only screen and (max-width: 48em) {
     .snip-layout .snip-table--small {
@@ -691,7 +703,10 @@ h4,
           width: 0; }
       .snip-layout .snip-table--small tr {
         padding: 0;
-        position: relative; }
+        position: relative;
+        /*+ tr {
+		  border-top: $_table-border;
+	  }*/ }
         .snip-layout .snip-table--small tr::after {
           clear: both;
           content: "";
@@ -708,7 +723,7 @@ h4,
         .snip-layout .snip-table--small .snip-table__body:empty {
           padding: 0; }
         .snip-layout .snip-table--small .snip-table__body ~ .snip-table__body {
-          border-top: 1px solid #00511f; }
+          border-top: 2px solid #00511f; }
           .snip-layout .snip-table--small .snip-table__body ~ .snip-table__body:empty {
             border: 0; }
       .snip-layout .snip-table--small .snip-table__body--small,
@@ -726,9 +741,9 @@ h4,
     text-transform: uppercase;
     color: #000; }
     .snip-layout .snip-table__header ~ .snip-table__header {
-      border-top: 1px solid #00511f; }
+      border-top: 2px solid #00511f; }
   .snip-layout .snip-table__body {
-    border-top: 1px solid #00511f;
+    border-top: 2px solid #00511f;
     display: table-row-group;
     padding: 1.429em; }
   .snip-layout .snip-table__body--small {
@@ -765,10 +780,11 @@ h4,
   .snip-layout .snip-table__cell--bold {
     font-family: "ProximaNova-Bold"; }
   .snip-layout .snip-table__cell--highlight {
+    font-family: "ProximaNova-Bold";
     color: #333; }
   .snip-layout .snip-table__cell--success {
     font-family: "ProximaNova-Bold";
-    color: #76d443; }
+    color: #000; }
   @media only screen and (max-width: 48em) {
     .snip-layout .snip-table__small-col {
       float: left;
@@ -776,7 +792,23 @@ h4,
       text-align: center;
       width: 33.333333%; }
       .snip-layout .snip-table__small-col + .snip-table__small-col {
-        border-left: 1px solid #00511f; } }
+        border-left: 2px solid #00511f; } }
+  .snip-layout #snipcart-discounts-list,
+  .snip-layout #snipcart-fees,
+  .snip-layout #snipcart-total {
+    border: none; }
+    .snip-layout #snipcart-discounts-list tr, .snip-layout #snipcart-discounts-list td,
+    .snip-layout #snipcart-fees tr,
+    .snip-layout #snipcart-fees td,
+    .snip-layout #snipcart-total tr,
+    .snip-layout #snipcart-total td {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border: none; }
+  .snip-layout #snipcart-discounts {
+    border-top: 2px solid #00511f; }
+    .snip-layout #snipcart-discounts tr {
+      border-top: 2px solid #00511f; }
   .snip-layout .snip-product {
     background: #FFFFFF;
     border-top: 1px solid #00511f;
@@ -792,7 +824,9 @@ h4,
     background: url("img/checkbox.png") no-repeat 0 center;
     padding-left: 2.286em; }
     .snip-layout .snip-product--selectable-item.js-selected {
-      background-image: url("img/selected.png"); }
+      background-image: url("img/checked.png");
+      background-repeat: no-repeat;
+      background-position: 0 center; }
   .snip-layout .snip-product__thumbnail {
     display: none;
     float: left;
@@ -981,13 +1015,16 @@ h4,
     .snip-layout .snip-form__container + .snip-form__container {
       margin-top: 1em; }
   .snip-layout .snip-form__label {
-    color: #999;
+    color: #000;
     display: block;
     font-size: 12px;
     margin: 0 0 .5em 0;
     overflow: hidden;
-    text-transform: uppercase;
+    text-transform: capitalize;
     cursor: pointer; }
+  .snip-layout label[for="snip-cvc"] {
+    display: inline-block;
+    width: 85%; }
   .snip-layout .snip-form__description {
     margin: 1em 0; }
   .snip-layout .snip-form__help {
@@ -1003,33 +1040,60 @@ h4,
     .snip-layout .snip-form__select--small ~ .snip-form__select--small {
       margin-left: 2%; }
   .snip-layout .snip-form__error {
-    background: #f10;
-    border-radius: 3px;
-    color: #fff;
+    color: #f10;
     font-size: 15px;
-    padding: .357em;
-    text-align: center; }
+    padding: .4em 0;
+    text-align: left;
+    line-height: 1em; }
+  .snip-layout #snipcart-billingaddress-form {
+    /*.snip-cols{
+        display: block;
+        
+        .snip-col{
+            width: 100%;
+        }
+    }*/ }
+    .snip-layout #snipcart-billingaddress-form input[type=checkbox] + label {
+      background: url("img/checkbox.png") no-repeat 0 center; }
+    .snip-layout #snipcart-billingaddress-form input[type=checkbox]:checked + label {
+      background: url("img/checked.png") no-repeat 0 center;
+      padding-left: 2.286em; }
   .snip-layout .snip-steps {
-    background: #ccc;
+    background: #fff;
     display: block;
-    height: 48px; }
+    height: 40px;
+    /*&.snip-steps--5 li {
+        width: percentage(1 / 5);
+    }*/ }
     .snip-layout .snip-steps.snip-steps--4 li {
       width: 25%; }
-    .snip-layout .snip-steps.snip-steps--5 li {
-      width: 20%; }
+    .snip-layout .snip-steps.snip-steps--5 {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      text-align: center;
+      margin: 0 auto; }
+      .snip-layout .snip-steps.snip-steps--5 li {
+        width: auto; }
     .snip-layout .snip-steps.snip-steps--6 li {
-      width: 16.66667%; }
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      text-align: center;
+      margin: 0 auto; }
+      .snip-layout .snip-steps.snip-steps--6 li li {
+        width: auto; }
     .snip-layout .snip-steps.snip-steps--7 li {
       width: 14.28571%; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-steps {
-        height: 60px; } }
+        height: 50px; } }
   .snip-layout .snipcart-step {
-    padding: 0 1.5em; }
+    padding: 0 1.5em;
+    background: #FAFAFA; }
   .snip-layout .snip-step__item {
-    background: #ccc;
-    border-bottom: 1px solid #bbb;
-    color: #000;
+    background: #fff;
+    color: #9B9B9B;
     cursor: pointer;
     display: table;
     float: left;
@@ -1047,13 +1111,16 @@ h4,
         -webkit-box-align: center;
         align-items: center; } }
     .snip-layout .snip-step__item + .snip-step__item {
-      border-left: 1px solid #bbb; }
+      border: none; }
     .snip-layout .snip-step__item.js-active {
       background: #fff;
-      border-bottom-color: #fff;
-      color: #333; }
+      color: #000;
+      font-family: "ProximaNova-Bold"; }
     .snip-layout .snip-step__item.js-hidden {
       display: none; }
+    .snip-layout .snip-step__item:visited, .snip-layout .snip-step__item.js-visited {
+      color: #009cbf;
+      text-decoration: underline; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-step__item {
         -webkit-box-pack: initial;
@@ -1063,23 +1130,25 @@ h4,
     font-size: 27.2px;
     padding: 0 .25em;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    display: none; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-step__nb {
-        font-size: 34px; } }
+        font-size: 34px;
+        display: none; } }
   .snip-layout .snip-step__label {
     display: none; }
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-step__label {
-        font-family: "ProximaNova-Bold";
+        font-family: "ProximaNova-Reg";
         display: table-cell;
-        font-size: 10px;
+        font-size: 13px;
         line-height: 16px;
         padding-right: .5em;
         text-align: left;
         text-transform: uppercase;
         vertical-align: middle;
-        width: 66.666666%; } }
+        padding-left: 1em; } }
     @media only screen and (min-width: 64em) {
       .snip-layout .snip-step__label {
         padding-right: 1em; } }
@@ -1146,6 +1215,7 @@ h4,
     text-align: center;
     text-transform: uppercase; }
   .snip-layout .snip-static {
+    font-size: 15px;
     padding: 1em 15%;
     text-align: center; }
   .snip-layout .snip-static--highlight {
@@ -1260,10 +1330,10 @@ h4,
     .snip-layout .snip-flash__item--confirm .snip-static__title {
       color: #fff; }
   .snip-layout .snip-flash__item--error {
-    background-color: #f10;
+    background-color: #D0021B;
     color: #fff; }
     .snip-layout .snip-flash__item--error:hover {
-      background-color: #990a00; }
+      background-color: #6b010e; }
   .snip-layout .snip-discount__remove {
     color: #D0021B;
     font-size: 20px;
@@ -1288,7 +1358,7 @@ h4,
     background-color: #76d443;
     color: #333; }
   .snip-layout .snip-badge--error {
-    background-color: #f10;
+    background-color: #D0021B;
     color: #fff; }
   .snip-layout .snip-badge--warn {
     background-color: #efe778;

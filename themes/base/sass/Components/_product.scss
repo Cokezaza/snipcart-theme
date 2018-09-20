@@ -41,7 +41,9 @@ $_product-disabled-opacity: 0.2;
 
     // [1]
     &.js-selected {
-        background-image: url("img/selected.png");
+        background-image: url("img/checked.png");
+        background-repeat: no-repeat;
+        background-position: 0 center;
     }
 }
 

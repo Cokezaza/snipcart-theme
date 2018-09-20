@@ -10,7 +10,7 @@
     LOCAL VARIABLES
 \*------------------------------------*/
 
-$_steps-height: 60px;
+$_steps-height: 50px;
 
 $_steps-border: 1px solid palette(step, border);
 
@@ -27,13 +27,28 @@ $_steps-border: 1px solid palette(step, border);
     &.snip-steps--4 li {
         width: percentage(1 / 4);
     }
-
-    &.snip-steps--5 li {
-        width: percentage(1 / 5);
+    
+    &.snip-steps--5{
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        li{
+            width: auto;
+        }
     }
 
+    /*&.snip-steps--5 li {
+        width: percentage(1 / 5);
+    }*/
+
     &.snip-steps--6 li {
-        width: percentage(1 / 6);
+        //width: percentage(1 / 6);
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        li{
+            width: auto;
+        }
     }
 
     &.snip-steps--7 li {
@@ -46,10 +61,11 @@ $_steps-border: 1px solid palette(step, border);
 }
 .snipcart-step{
     padding: 0 $padding-small;
+    background: #FAFAFA;
 }
 .snip-step__item {
     background: palette(step, background);
-    border-bottom: $_steps-border;
+    //border-bottom: $_steps-border;
     color: palette(step, color);
     cursor: pointer;
     display: table;
@@ -65,17 +81,24 @@ $_steps-border: 1px solid palette(step, border);
     }
 
     + .snip-step__item {
-        border-left: $_steps-border;
+        //border-left: $_steps-border;
+        border: none;
     }
 
     &.js-active {
         background: palette(step, background--active);
-        border-bottom-color: palette(step, background--active);
+        //border-bottom-color: palette(step, background--active);
         color: palette(step, color--active);
+        font-family: $font-bold;
     }
 
     &.js-hidden {
         display: none;
+    }
+    
+    &:visited, &.js-visited{
+        color: palette(step, color--visited);
+        text-decoration: underline;
     }
 
     @media #{$mq-medium} {
@@ -89,9 +112,11 @@ $_steps-border: 1px solid palette(step, border);
     padding: 0 .25em;
     text-align: center;
     vertical-align: middle;
+    display: none;
 
     @media #{$mq-medium} {
         font-size: fontsize(step, icon);
+        display: none;
     }
 }
 
@@ -99,15 +124,16 @@ $_steps-border: 1px solid palette(step, border);
     display: none;
 
     @media #{$mq-medium} {
-        @include font-bold;
+        @include font-reg;
         display: table-cell;
-        font-size: fontsize(step, small);
+        font-size: fontsize(step, medium);
         line-height: 16px;
         padding-right: .5em;
         text-align: left;
         text-transform: uppercase;
         vertical-align: middle;
-        width: 66.666666%;
+       // width: 66.666666%;
+        padding-left: 1em;
     }
 
     @media #{$mq-large} {

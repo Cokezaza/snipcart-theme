@@ -14,13 +14,16 @@ $palettes: (
 	button: (
 		background: linear-gradient(to bottom, #00cbe1, #009cbf),
 		background--highlight: linear-gradient(to bottom, #00cbe1, #009cbf),
+		background--active: #fff,
 		background--hover: linear-gradient(to bottom, #009cbf, #00cbe1),
-		background--danger: #f10,
-		background--danger-hover: darken(#f10, 10%),
+		background--danger: #D0021B,
+		background--danger-hover: darken(#D0021B, 10%),
 		background--highlight-hover: darken(#009cbf, 10%),
 		backgroun--disabled: #9B9B9B,
 		color: #fff,
 		color--highlight: #fff,
+		color--active: #009cbf,
+		border-active: #009cbf
 	),
 	error: (
 		color: #f10,
@@ -29,14 +32,14 @@ $palettes: (
 	),
 	badge: (
 		background--success: #76d443,
-		background--error: #f10,
+		background--error: #D0021B,
 		background--warn: #efe778,
 		text--success: #333,
 		text--error: #fff,
 		text--warn: #333
 	),
 	flash: (
-		background--error: #f10,
+		background--error: #D0021B,
 		background--success: #76d443,
 		background--warning: #efe778,
 		background--confirm: #222,
@@ -52,10 +55,10 @@ $palettes: (
 	form: (
 		background: #fff,
 		border: #eee,
-		border--focus: #333,
+		border--focus: #009cbf,
 		color: #555,
 		color--highlight: #333,
-		label-color: #999
+		label-color: #000
 	),
 	header: (
 		background: #00511f,
@@ -97,17 +100,18 @@ $palettes: (
 		color--link: #999
 	),
 	step: (
-		background: #ccc,
+		background: #fff,
 		background--active: #fff,
 		border: #bbb,
-		color: #000,
-		color--active: #333
+		color: #9B9B9B,
+		color--active: #000,
+		color--visited: #009cbf
 	),
 	table: (
 		background--highlight: #f8f8f8,
 		border: #00511f,
 		color--highlight: #333,
-		color--success: #76d443,
+		color--success: #000,
 		color: #000
 	),
 	tooltip: (

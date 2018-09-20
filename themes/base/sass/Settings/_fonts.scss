@@ -70,16 +70,31 @@ $font-base: $font-reg, Arial, sans-serif;
 @mixin font-bold {
   font-family: $font-bold;
 }
+@mixin font-reg {
+  font-family: $font-reg;
+}
+@mixin font-thin {
+  font-family: $font-thin;
+}
+@mixin font-semi {
+  font-family: $font-semi;
+}
 
 /**
     FONT SIZES
 */
 $fontsize: (
 	action: (
-		small: 12px
+		base: 15px,
+		small: 12px,
+		medium: 13px,
+		large: 18px
 	),
 	button: (
-		base: 12px
+		base: 15px,
+		small: 12px,
+		medium: 13px,
+		large: 18px
 	),
 	error: (
 		base: 14px
@@ -118,6 +133,8 @@ $fontsize: (
 		base: 14px
 	),
 	step: (
+		base: 15px,
+		medium: 13px,
 		small: 10px,
 		icon: 34px
 	),

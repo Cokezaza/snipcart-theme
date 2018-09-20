@@ -11,7 +11,7 @@
     LOCAL VARIABLES
 \*------------------------------------*/
 
-$_header-height: auto;
+$_header-height: 50px;
 $_header-total-height: 30px;
 
 /*------------------------------------*\
@@ -21,7 +21,7 @@ $_header-total-height: 30px;
 .snip-header {
   background: palette(header, background);
   color: palette(header, color);
-  padding: 15px 0 15px;
+  padding: 10px 0 15px;
   position: relative;
   text-align: left;
   text-transform: uppercase;
