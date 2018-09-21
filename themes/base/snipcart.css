@@ -148,6 +148,9 @@ body.snip-open {
 \*------------------------------------*/
   /*------------------------------------*    STYLE
 \*------------------------------------*/
+  /*.snip-layout__content--bordered {
+    border-bottom: $_layout-border;
+}*/
   /**
     HEADER
 
@@ -484,7 +487,7 @@ h4,
           display: none; } }
   .snip-layout .snip-layout__loading {
     font-family: "ProximaNova-Bold";
-    color: #333;
+    color: #E0E4E4;
     padding: 5em 0;
     text-align: center;
     text-transform: uppercase;
@@ -499,8 +502,6 @@ h4,
     border-bottom: 1px solid #bbb;
     border-top: 1px solid #bbb;
     padding: 1em 0; }
-  .snip-layout .snip-layout__content--bordered {
-    border-bottom: 1px solid #eee; }
   .snip-layout .snip-layout__subtitle {
     padding: 0 1em;
     text-transform: uppercase;
@@ -805,10 +806,10 @@ h4,
       padding-top: 0.5em;
       padding-bottom: 0.5em;
       border: none; }
-  .snip-layout #snipcart-discounts {
-    border-top: 2px solid #00511f; }
-    .snip-layout #snipcart-discounts tr {
-      border-top: 2px solid #00511f; }
+  .snip-layout #snipcart-total {
+    border-bottom: 2px solid #00511f; }
+    .snip-layout #snipcart-total tr {
+      border-bottom: 2px solid #00511f; }
   .snip-layout .snip-product {
     background: #FFFFFF;
     border-top: 1px solid #00511f;

@@ -248,9 +248,9 @@ $_notice-error--text-color: palette(static, color--highlight);
 	border: none;
   }
 }
-#snipcart-discounts {
-  border-top: $_table-border;
+#snipcart-total {
+  border-bottom: $_table-border;
   tr{
-	border-top: $_table-border;
+	border-bottom: $_table-border;
   }
 }
