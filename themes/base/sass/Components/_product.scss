@@ -75,6 +75,9 @@ $_product-disabled-opacity: 0.2;
         font-size: fontsize(product, base);
         margin-top: .5em;
     }
+    @media #{$mq-small} {
+        width: 80vw;
+    }
 }
 
 .snip-product__description {

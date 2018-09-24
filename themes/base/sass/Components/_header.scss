@@ -103,6 +103,9 @@ $_header-total-height: 30px;
 	line-height: normal;
 	font-family: $font-thin;
   }
+  @media #{$mq-small} {
+	font-size: 1em;
+  }
 }
 
 .snip-header__total {
@@ -120,6 +123,16 @@ $_header-total-height: 30px;
 	margin: 0;
 	padding: 0 .625em;
   }
+  
+  @media #{$mq-phone} {
+	display: block;
+	margin: 10px auto 10px auto;
+	padding: 0.8em;
+	text-align: center;
+	width: 90vw;
+	font-size: 1em;
+  }
+  
 }
 
 .snip-header__total-label {

@@ -80,11 +80,16 @@ $_btn-size: 39px;
 // [4]
 .snip-btn--left {
     float: left;
+    @media #{$mq-small} {
+        margin: 1em 0;
+    }
 }
 
 .snip-btn--right {
     float: right;
-    margin-left: 1em;
+    @media #{$mq-small} {
+        margin: 1em 0;
+    }
 }
 
 .snip-btn--danger {

@@ -453,9 +453,14 @@ h4,
       background-color: #00728c; }
   .snip-layout .snip-btn--left {
     float: left; }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-btn--left {
+        margin: 1em 0; } }
   .snip-layout .snip-btn--right {
-    float: right;
-    margin-left: 1em; }
+    float: right; }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-btn--right {
+        margin: 1em 0; } }
   .snip-layout .snip-btn--danger {
     background-color: #D0021B; }
     .snip-layout .snip-btn--danger:hover {
@@ -572,6 +577,9 @@ h4,
         margin: 0;
         line-height: normal;
         font-family: "ProximaNova-Thin"; } }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-header__title {
+        font-size: 1em; } }
   .snip-layout .snip-header__total {
     background: #1A6235;
     border-radius: 5px;
@@ -586,6 +594,14 @@ h4,
         line-height: 30px;
         margin: 0;
         padding: 0 .625em; } }
+    @media only screen and (max-width: 26em) {
+      .snip-layout .snip-header__total {
+        display: block;
+        margin: 10px auto 10px auto;
+        padding: 0.8em;
+        text-align: center;
+        width: 90vw;
+        font-size: 1em; } }
   .snip-layout .snip-header__total-label {
     color: #fff;
     margin-right: .625em;
@@ -810,6 +826,12 @@ h4,
     border-bottom: 2px solid #00511f; }
     .snip-layout #snipcart-total tr {
       border-bottom: 2px solid #00511f; }
+  @media only screen and (min-width: 48em) {
+    .snip-layout #snipcart-items-list .snip-table__small-col {
+      border: none; } }
+  @media only screen and (max-width: 48em) {
+    .snip-layout #snipcart-items-list .snip-table__small-col {
+      border: none; } }
   .snip-layout .snip-product {
     background: #FFFFFF;
     border-top: 1px solid #00511f;
@@ -850,6 +872,9 @@ h4,
       .snip-layout .snip-product__name {
         font-size: 15px;
         margin-top: .5em; } }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-product__name {
+        width: 80vw; } }
   .snip-layout .snip-product__description {
     font-size: 13.33333px;
     margin-top: .25em;
