@@ -29,7 +29,7 @@ $_action-border: 1px solid palette(layout, border);
     }
     
     @media #{$mq-small} {
-        padding: $_action-pad;
+        padding: $_action-pad 0;
     }
 }
 

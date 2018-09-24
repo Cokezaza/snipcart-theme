@@ -657,7 +657,7 @@ h4,
         padding: 20px; } }
     @media only screen and (max-width: 48em) {
       .snip-layout .snip-actions {
-        padding: 20px; } }
+        padding: 20px 0; } }
   .snip-layout .snip-actions--no-border {
     border-top: none; }
   .snip-layout .snip-actions--top {
@@ -1043,6 +1043,10 @@ h4,
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-form--discount {
         margin-right: 1em;
+        max-width: none; } }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-form--discount {
+        margin-right: 0;
         max-width: none; } }
   .snip-layout .snip-form__container {
     clear: left; }
