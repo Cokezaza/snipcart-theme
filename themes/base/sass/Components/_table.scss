@@ -53,6 +53,9 @@ $_notice-error--text-color: palette(static, color--highlight);
 	  padding-top: 0.5em;
 	  padding-bottom: 0.5em;
 	  border: none;
+	  @media #{$mq-small} {
+		text-align: center;
+	  }
 	}
   }
 }
@@ -248,14 +251,15 @@ $_notice-error--text-color: palette(static, color--highlight);
 	border: none;
   }
 }
+
 #snipcart-total {
   border-bottom: $_table-border;
-  tr{
+  tr {
 	border-bottom: $_table-border;
   }
 }
 
-#snipcart-items-list{
+#snipcart-items-list {
   .snip-table__small-col {
 	@media #{$mq-medium} {
 	  border: none;

@@ -27,6 +27,10 @@ $_action-border: 1px solid palette(layout, border);
     @media #{$mq-medium} {
         padding: $_action-pad;
     }
+    
+    @media #{$mq-small} {
+        padding: $_action-pad;
+    }
 }
 
 .snip-actions--no-border {

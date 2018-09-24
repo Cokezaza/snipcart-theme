@@ -472,7 +472,7 @@ h4,
   .snip-layout .snip-layout__main-container {
     background: #fff;
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 60em;
     position: relative;
     border-radius: 5px; }
   .snip-layout .snip-layout__close {
@@ -655,6 +655,9 @@ h4,
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-actions {
         padding: 20px; } }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-actions {
+        padding: 20px; } }
   .snip-layout .snip-actions--no-border {
     border-top: none; }
   .snip-layout .snip-actions--top {
@@ -695,6 +698,15 @@ h4,
       padding-top: 0.5em;
       padding-bottom: 0.5em;
       border: none; }
+      @media only screen and (max-width: 48em) {
+        .snip-layout .snip-table #snipcart-discounts-list tr, .snip-layout .snip-table #snipcart-discounts-list td,
+        .snip-layout .snip-table #snipcart-discounts tr,
+        .snip-layout .snip-table #snipcart-discounts td,
+        .snip-layout .snip-table #snipcart-fees tr,
+        .snip-layout .snip-table #snipcart-fees td,
+        .snip-layout .snip-table #snipcart-total tr,
+        .snip-layout .snip-table #snipcart-total td {
+          text-align: center; } }
   .snip-layout .snip-table .snip-table__cell__notices {
     margin: 0;
     padding: 0; }
@@ -1372,6 +1384,9 @@ h4,
     @media only screen and (min-width: 48em) {
       .snip-layout .snip-discount__remove {
         float: left; } }
+  @media only screen and (max-width: 48em) {
+    .snip-layout #snipcart-discounts {
+      padding: 1em 0; } }
   .snip-layout .snip-badge {
     font-family: "ProximaNova-Bold";
     text-transform: uppercase;

@@ -1,15 +1,20 @@
 .snip-discount__remove {
-    color: palette(product, color--error);
-    font-size: fontsize(discount, icon);
-    position: static;
-
-    @media #{$mq-small} {
-      position: absolute;
-      right: $padding-small / 3.5;
-      top: $padding-small / 1.75;
-    }
-
-    @media #{$mq-medium} {
-        float: left;
-    }
+  color: palette(product, color--error);
+  font-size: fontsize(discount, icon);
+  position: static;
+  
+  @media #{$mq-small} {
+	position: absolute;
+	right: $padding-small / 3.5;
+	top: $padding-small / 1.75;
+  }
+  
+  @media #{$mq-medium} {
+	float: left;
+  }
+}
+#snipcart-discounts{
+  @media #{$mq-small} {
+	padding: 1em 0;
+  }
 }
