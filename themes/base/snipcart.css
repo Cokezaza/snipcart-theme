@@ -687,7 +687,7 @@ h4,
     border: none; }
     .snip-layout .snip-table td, .snip-layout .snip-table th, .snip-layout .snip-table tr {
       border: none;
-      border-bottom: 2px solid #00511f solid #00511f;
+      border-bottom: 2px solid #00511f;
       padding: 1.5em 0.5em 1.5em 0; }
       .snip-layout .snip-table td.snip-table__row--no-border, .snip-layout .snip-table th.snip-table__row--no-border, .snip-layout .snip-table tr.snip-table__row--no-border {
         border-bottom: none; }

@@ -33,7 +33,7 @@ $_notice-error--text-color: palette(static, color--highlight);
   // [1]
   td, th, tr {
 	border: none;
-	border-bottom: $_table-border solid palette(table, border);
+	border-bottom: $_table-border;
 	padding: $padding-small 0.5em $padding-small 0;
 	
 	&.snip-table__row--no-border {
