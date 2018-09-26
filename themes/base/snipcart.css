@@ -697,8 +697,9 @@ h4,
     .snip-layout .snip-table #snipcart-total td {
       padding-top: 0.5em;
       padding-bottom: 0.5em;
+      padding-left: 0;
       border: none; }
-      @media only screen and (max-width: 48em) {
+      @media only screen and (max-width: 26em) {
         .snip-layout .snip-table #snipcart-discounts-list tr, .snip-layout .snip-table #snipcart-discounts-list td,
         .snip-layout .snip-table #snipcart-discounts tr,
         .snip-layout .snip-table #snipcart-discounts td,
@@ -706,7 +707,7 @@ h4,
         .snip-layout .snip-table #snipcart-fees td,
         .snip-layout .snip-table #snipcart-total tr,
         .snip-layout .snip-table #snipcart-total td {
-          text-align: center; } }
+          text-align: left; } }
   .snip-layout .snip-table .snip-table__cell__notices {
     margin: 0;
     padding: 0; }
@@ -811,9 +812,15 @@ h4,
   .snip-layout .snip-table__cell--highlight {
     font-family: "ProximaNova-Bold";
     color: #333; }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-table__cell--highlight {
+        font-family: "ProximaNova-Reg"; } }
   .snip-layout .snip-table__cell--success {
     font-family: "ProximaNova-Bold";
     color: #000; }
+    @media only screen and (max-width: 48em) {
+      .snip-layout .snip-table__cell--success {
+        font-family: "ProximaNova-Reg"; } }
   @media only screen and (max-width: 48em) {
     .snip-layout .snip-table__small-col {
       float: left;
@@ -838,6 +845,9 @@ h4,
     border-bottom: 2px solid #00511f; }
     .snip-layout #snipcart-total tr {
       border-bottom: 2px solid #00511f; }
+  @media only screen and (max-width: 48em) {
+    .snip-layout #snipcart-fees td.snip-table__cell--highlight {
+      font-family: "ProximaNova-Reg"; } }
   @media only screen and (min-width: 48em) {
     .snip-layout #snipcart-items-list .snip-table__small-col {
       border: none; } }

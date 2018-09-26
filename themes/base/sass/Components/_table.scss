@@ -52,9 +52,10 @@ $_notice-error--text-color: palette(static, color--highlight);
 	tr, td {
 	  padding-top: 0.5em;
 	  padding-bottom: 0.5em;
+	  padding-left: 0;
 	  border: none;
-	  @media #{$mq-small} {
-		text-align: center;
+	  @media #{$mq-phone} {
+		text-align: left;
 	  }
 	}
   }
@@ -221,11 +222,17 @@ $_notice-error--text-color: palette(static, color--highlight);
 .snip-table__cell--highlight {
   @include font-bold;
   color: palette(table, color--highlight);
+  @media #{$mq-small} {
+	@include font-reg;
+  }
 }
 
 .snip-table__cell--success {
   @include font-bold;
   color: palette(table, color--success);
+  @media #{$mq-small} {
+	@include font-reg;
+  }
 }
 
 .snip-table__small-col {
@@ -256,6 +263,14 @@ $_notice-error--text-color: palette(static, color--highlight);
   border-bottom: $_table-border;
   tr {
 	border-bottom: $_table-border;
+  }
+}
+
+#snipcart-fees{
+  td.snip-table__cell--highlight {
+	@media #{$mq-small} {
+	  @include font-reg;
+	}
   }
 }
 
