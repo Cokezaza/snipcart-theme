@@ -33,8 +33,7 @@ $_notice-error--text-color: palette(static, color--highlight);
   // [1]
   td, th, tr {
 	border: none;
-	border-color: palette(table, border);
-	border-bottom: $_table-border;
+	border-bottom: $_table-border solid palette(table, border);
 	padding: $padding-small 0.5em $padding-small 0;
 	
 	&.snip-table__row--no-border {
@@ -42,6 +41,9 @@ $_notice-error--text-color: palette(static, color--highlight);
 	  td {
 		border-bottom: 0;
 	  }
+	}
+	@media #{$mq-phone} {
+	  padding: 1em 0em 1em 0;
 	}
   }
   
@@ -54,7 +56,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 	  padding-bottom: 0.5em;
 	  padding-left: 0;
 	  border: none;
-	  @media #{$mq-phone} {
+	  @media #{$mq-small} {
 		text-align: left;
 	  }
 	}
@@ -281,6 +283,17 @@ $_notice-error--text-color: palette(static, color--highlight);
 	}
 	@media #{$mq-small} {
 	  border: none;
+	}
+  }
+}
+#snipcart-shippings-list {
+  tr{
+	td{
+	  h2.snip-product__name{
+		@media #{$mq-phone} {
+		 width: 50vw;
+		}
+	  }
 	}
   }
 }

@@ -83,11 +83,17 @@ $_btn-size: 39px;
     @media #{$mq-small} {
         margin: 1em 0;
     }
+    @media #{$mq-phone} {
+        margin: 1em 0;
+    }
 }
 
 .snip-btn--right {
     float: right;
     @media #{$mq-small} {
+        margin: 1em 0.5em;
+    }
+    @media #{$mq-phone} {
         margin: 1em 0;
     }
 }

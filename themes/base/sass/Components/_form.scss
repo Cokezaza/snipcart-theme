@@ -31,7 +31,13 @@ $_form-border: 1px solid palette(form, border);
         max-width: none;
     }
     @media #{$mq-small} {
+        margin-right: 0.5em;
+        padding: 1em 0.5em;
+        max-width: none;
+    }
+    @media #{$mq-phone} {
         margin-right: 0;
+        padding: 0;
         max-width: none;
     }
 }

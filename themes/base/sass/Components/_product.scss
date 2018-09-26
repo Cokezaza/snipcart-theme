@@ -33,6 +33,9 @@ $_product-disabled-opacity: 0.2;
 
 .snip-product--selectable {
     cursor: pointer;
+    @media #{$mq-phone}{
+        width: 45%;
+    }
 }
 
 .snip-product--selectable-item {

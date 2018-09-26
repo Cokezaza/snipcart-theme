@@ -456,9 +456,15 @@ h4,
     @media only screen and (max-width: 48em) {
       .snip-layout .snip-btn--left {
         margin: 1em 0; } }
+    @media only screen and (max-width: 26em) {
+      .snip-layout .snip-btn--left {
+        margin: 1em 0; } }
   .snip-layout .snip-btn--right {
     float: right; }
     @media only screen and (max-width: 48em) {
+      .snip-layout .snip-btn--right {
+        margin: 1em 0.5em; } }
+    @media only screen and (max-width: 26em) {
       .snip-layout .snip-btn--right {
         margin: 1em 0; } }
   .snip-layout .snip-btn--danger {
@@ -681,13 +687,15 @@ h4,
     border: none; }
     .snip-layout .snip-table td, .snip-layout .snip-table th, .snip-layout .snip-table tr {
       border: none;
-      border-color: #00511f;
-      border-bottom: 2px solid #00511f;
+      border-bottom: 2px solid #00511f solid #00511f;
       padding: 1.5em 0.5em 1.5em 0; }
       .snip-layout .snip-table td.snip-table__row--no-border, .snip-layout .snip-table th.snip-table__row--no-border, .snip-layout .snip-table tr.snip-table__row--no-border {
         border-bottom: none; }
         .snip-layout .snip-table td.snip-table__row--no-border td, .snip-layout .snip-table th.snip-table__row--no-border td, .snip-layout .snip-table tr.snip-table__row--no-border td {
           border-bottom: 0; }
+      @media only screen and (max-width: 26em) {
+        .snip-layout .snip-table td, .snip-layout .snip-table th, .snip-layout .snip-table tr {
+          padding: 1em 0em 1em 0; } }
     .snip-layout .snip-table #snipcart-discounts-list tr, .snip-layout .snip-table #snipcart-discounts-list td,
     .snip-layout .snip-table #snipcart-discounts tr,
     .snip-layout .snip-table #snipcart-discounts td,
@@ -699,7 +707,7 @@ h4,
       padding-bottom: 0.5em;
       padding-left: 0;
       border: none; }
-      @media only screen and (max-width: 26em) {
+      @media only screen and (max-width: 48em) {
         .snip-layout .snip-table #snipcart-discounts-list tr, .snip-layout .snip-table #snipcart-discounts-list td,
         .snip-layout .snip-table #snipcart-discounts tr,
         .snip-layout .snip-table #snipcart-discounts td,
@@ -854,6 +862,9 @@ h4,
   @media only screen and (max-width: 48em) {
     .snip-layout #snipcart-items-list .snip-table__small-col {
       border: none; } }
+  @media only screen and (max-width: 26em) {
+    .snip-layout #snipcart-shippings-list tr td h2.snip-product__name {
+      width: 50vw; } }
   .snip-layout .snip-product {
     background: #FFFFFF;
     border-top: 1px solid #00511f;
@@ -865,6 +876,9 @@ h4,
       display: table; }
   .snip-layout .snip-product--selectable {
     cursor: pointer; }
+    @media only screen and (max-width: 26em) {
+      .snip-layout .snip-product--selectable {
+        width: 45%; } }
   .snip-layout .snip-product--selectable-item {
     background: url("img/checkbox.png") no-repeat 0 center;
     padding-left: 2.286em; }
@@ -1056,7 +1070,13 @@ h4,
         max-width: none; } }
     @media only screen and (max-width: 48em) {
       .snip-layout .snip-form--discount {
+        margin-right: 0.5em;
+        padding: 1em 0.5em;
+        max-width: none; } }
+    @media only screen and (max-width: 26em) {
+      .snip-layout .snip-form--discount {
         margin-right: 0;
+        padding: 0;
         max-width: none; } }
   .snip-layout .snip-form__container {
     clear: left; }
